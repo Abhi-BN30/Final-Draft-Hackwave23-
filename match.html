@@ -30,11 +30,15 @@
             fileInput.click();
         }
 
-        // Call the function to read "sample.txt" when a button is clicked
-        const readButton = document.createElement('button');
-        readButton.textContent = 'Read "output.txt"';
-        readButton.addEventListener('click', readTextFile);
-        document.body.appendChild(readButton);
+        // // Call the function to read "sample.txt" when a button is clicked
+        // const readButton = document.createElement('button');
+        // readButton.textContent = 'Read "output.txt"';
+        // readButton.addEventListener('click', readTextFile);
+        // document.body.appendChild(readButton);
+
+        var w = window.open('output.txt');
+        w.print();
+
     </script>
 
 </body>
