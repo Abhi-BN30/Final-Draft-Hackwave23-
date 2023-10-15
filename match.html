@@ -4,7 +4,12 @@
     <title>Read Text File</title>
 </head>
 <body>
-    <h1>Finding Match<h1>
+    <h1>Finding Match for<h1>
+    <h2>Date : 10-14-23</h2>
+    <h2>Destination : Goa</h2>
+    <h2>Gender : Male</h2>
+
+    <button onclick="docwr()">Click here for match</button>
     <script>
         // Function to read the "sample.txt" file
         function readTextFile() {
@@ -31,10 +36,17 @@
         }
 
         // Call the function to read "sample.txt" when a button is clicked
-        const readButton = document.createElement('button');
-        readButton.textContent = 'Read "output.txt"';
-        readButton.addEventListener('click', readTextFile);
-        document.body.appendChild(readButton);
+        // const readButton = document.createElement('button');
+        // readButton.textContent = 'Check for match';
+        // readButton.addEventListener('click', readTextFile);
+        // document.body.appendChild(readButton);
+
+        function docwr(){
+            
+        var w = window.open('output.txt');
+        w.print();
+        }
+        
     </script>
 
 </body>
