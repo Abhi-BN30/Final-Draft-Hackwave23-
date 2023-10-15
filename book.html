@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Safar | Tinder for travel</title>
+
+        <!-- UI/UX and responsive intercation -->
+        <link rel = "icon" href = "logo.jpg" type = "image/jpg">
+        <link rel = "stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6228f76957.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <!-- All fonts are places here -->
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Bellota' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=ZCOOL QingKe HuangYou' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
+
+        <script src="js1.js"></script>
+    </head>
+    <body>
+        
+        <center>
+            <div class="headi" id="home">
+                <div class="cont">
+                    <h1>Safar</h1>
+                    <h3>Tinder for travel</h3>
+                </div>
+            </div>
+        
+            <div class="somet">
+                <ul>
+                    <li><a href="safar.html">Home</a></li>
+                    <li><a href="#">Co-Ordinate</a></li>
+                    <li><a href="comm.html">Communicate</a></li>
+                    <li><a href="cult.html">Cultivate</a></li>
+                    <li><a href="book.html">Bookings</a></li>
+                    <li class="dropdown">
+                    <a href="safar.html#oth" class="dropbtn">Others &nbsp<i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="safar.html#blog">Bloggers</a>
+                        <a href="safar.html#ame">Amateur</a>
+                        <a href="#cnt">Contact Us</a>
+                    </div>
+                    </li>
+                    <li style="float: right;"><p id="ico" class="fa-solid fa-toggle-off" onclick="dark()"></p></li>
+                    <div id="cood"></div>
+                </ul>
+            
+            <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:rgb(255, 81, 0);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:orange;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <path style="transform:translate(0, 0px); opacity:1" fill="url(#grad1)" d="M0,50L10,51.7C20,53,40,57,60,55C80,53,100,47,120,46.7C140,47,160,53,180,48.3C200,43,220,27,240,18.3C260,10,280,10,300,18.3C320,27,340,43,360,48.3C380,53,400,47,420,45C440,43,460,47,480,50C500,53,520,57,540,60C560,63,580,67,600,68.3C620,70,640,70,660,65C680,60,700,50,720,40C740,30,760,20,780,25C800,30,820,50,840,58.3C860,67,880,63,900,51.7C920,40,940,20,960,16.7C980,13,1000,27,1020,35C1040,43,1060,47,1080,48.3C1100,50,1120,50,1140,50C1160,50,1180,50,1200,55C1220,60,1240,70,1260,76.7C1280,83,1300,87,1320,81.7C1340,77,1360,63,1380,60C1400,57,1420,63,1430,66.7L1440,70L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path>
+            </svg>
+            <script>
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        $('#wave').css("opacity", 1- $(window).scrollTop()/175)
+                    })
+                })
+            </script>    
+            </div>
+            <a href="#" style="text-decoration : none ">
+                <div class="ttt">
+                    <center>
+                    <i id="trail" class="fa-regular fa-circle-up fa-2xl" style="color: black;"></i>
+                </center>
+                </div>
+            </a>
+    
+        
+            
+        
+            <h1 class="coodhead">Bookings</h4>
+            <h2 class="coodcont">
+                Worried about where to book what?<br>
+                No issues!<br>
+                You have us ..... <br>
+                Choose your options below
+                <div class="row" id="oth">
+                    <a href="travbook.html" style="text-decoration: none;"><button class="but"><i class="fa-solid fa-suitcase-rolling"></i>&nbsp Travel Booking</button></a>
+                    <a href="hotbook.html"><button class="but"><i class="fa-solid fa-hotel"></i>&nbsp Hotel Booking</button></a>
+                    <a href="foodres.html"><button class="but"><i class="fa-solid fa-stroopwafel"></i>&nbsp Food Reservations</button></a>
+                </div>
+                
+            </h6>
+
+            <div id="cnt" style="background-image : linear-gradient(45deg,orange,rgb(255,81,0))  ; color:black; font-family:ABeeZee ; font-weight : lighter">
+                <br>
+                    <h3 style="font-family : Agency FB; color : black; font-size:24pt">You can find us on</h3> 
+                    <h4 style="font-size: 18pt;"><a href="https://www.instagram.com" style="text-decoration:none; color: black" target="blank"><i style="cursor:pointer" class="fa fa-instagram"></i></a>&nbsp;&nbsp;
+                                <a href="https://www.facebook.com" style="text-decoration:none; color: black" target="blank"><i style="cursor:pointer" class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+                                <a href="https://www.twitter.com" style="text-decoration:none; color: black" target="blank"><i style="cursor:pointer" class="fa fa-twitter"></i></a>&nbsp;&nbsp;
+                                <a href="https://www.linkedin.com" style="text-decoration:none; color: black" target="blank"><i style="cursor:pointer" class="fa fa-linkedin"></i></a></h4>
+        
+                    <h3 style="font-family : Agency FB; color : black ; font-size:24pt">or</h3>
+                    <h4 style="font-size: 14pt;font-family:ABeeZee"><a href="mailto:safar@gmail.com" style="text-decoration:none ; color:black"><i class="fa fa-envelope-o"></i>&nbsp;Mail us to :<u><b> safar@gmail.com</b></u></a></h4>   
+                    <h4 style="font-size: 14pt;font-family:ABeeZee"><a href="tel:9880182115" style="text-decoration:none ; color:black"><i class="fa fa-phone"></i>&nbsp;Give us a call at :<u> 9********9</u></a></h4>
+        
+                    <div style="border-radius:30px;border-style:solid; padding:14px 14px; width:150px">
+                        <a href="#" style="text-decoration:none ; color:black ; width:150px ">
+                            To the top&nbsp;<i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+                <br>
+            </div>
+        
+    
+        
+    </body>
+</html>
